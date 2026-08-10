@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #050505;
+    border-bottom: 1px solid #1c1c1c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo span {
+    color: #E50914;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+.navbar nav a {
+    color: #a3a3a3;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.navbar nav a:hover {
+    color: #ffffff;
+}
+.navbar nav a.active {
+    color: #E50914;
+}
+
+.resume-btn {
+    padding: 10px 18px;
+    background-color: #E50914;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.resume-btn:hover {
+    background-color: #ff1e2d;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: calc(100vh - 70px);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    padding: 60px 7%;
+}
+.hero-content {
+    max-width: 700px;
+}
+.intro {
+    color: #a3a3a3;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.hero h1 {
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.hero h1 span {
+    color: #E50914;
+}
+.hero h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #d4d4d4;
+    margin-bottom: 20px;
+}
+.hero-description {
+    max-width: 600px;
+    color: #8f8f8f;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+.primary-btn,
+.secondary-btn {
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.primary-btn {
+    background-color: #E50914;
+    color: white;
+}
+.primary-btn:hover {
+    background-color: #ff1e2d;
+    transform: translateY(-2px);
+}
+.secondary-btn {
+    border: 1px solid #444;
+    color: white;
+}
+.secondary-btn:hover {
+    border-color: #E50914;
+    color: #E50914;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image img {
+    width: 360px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #E50914;
+}
